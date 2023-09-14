@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Bolum-sonu-projesi-1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .list-group {
+      position: sticky;
+      top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar - Start-->
+  <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">F1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Championships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Drivers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar - End-->
+  <!--Main - Start-->
+  <main>
+    <div class="container-fluid bg-dark">
+      <div class="row align-items-center">
+        <div class="col-sm-12">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel slide" id="carouselExampleAutoplaying" data-bs-ride="carousel">
+              <div class="carousel-item active">
+                <img src="images/mercedess.png" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ferrari.png" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/aston.png" class="d-block w-100 rounded" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center text-center my-4  rounded shadow border">
+        <div class="col-sm-8">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p class="text-danger">If you no longer go for a gap that exists, you’re no longer a racing driver</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+               <cite title="Source Title">Senna</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/schumacher.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Michael Schumacher</strong></h5>
+                  <p class="card-text">Once something is a passion, the motivation is there...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" id="hamilton">
+            <img src="images/hamilton.png" class="card-img-top w-100" alt="...">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="images/hamiltoniki.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">I know my boundaries. I know the limits to the car</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 my-2">
+          <div class="list-group">
+            <a href="#circuit" class="list-group-item list-group-item-action" aria-current="true">
+              Circuits
+            </a>
+            <a href="#hamilton" class="list-group-item list-group-item-action">Drivers</a>
+            <a href="#" class="list-group-item list-group-item-action">History</a>
+          </div>
+        </div>
+        <div class="col-sm-8 ">
+          <div class="card my-2 p-3" id="circuit">
+            <article>
+              <img src="images/monza.png"  class="w-50 rounded my-4" alt="">
+              <h2>Monza Circuit</h2>
+              <p>The Monza Circuit (Italian: Autodromo Nazionale di Monza, lit.'National Automobile Racetrack of Monza') is a 5.793 km (3.600 mi) race track near the city of Monza, north of Milan, in Italy. Built in 1922, it was the world's third purpose-built motor racing circuit after Brooklands and Indianapolis and the oldest in mainland Europe.[dubious-discuss] The circuit's biggest event is the Italian Grand Prix. With the exception of the 1980 running, the race has been hosted there since 1949.</p>
+            </article>
+          </div>
+          <div class="card my-2 p-3">
+            <article>
+              <img src="images/silverstone.png" class="w-50 rounded my-4" alt="">
+              <h2>Silverstone Circuit</h2>
+              <p>Silverstone Circuit is a motor racing circuit in England, near the Northamptonshire villages of Towcester, Silverstone and Whittlebury. It is the home of the British Grand Prix, which it first hosted as the 1948 British Grand Prix. The 1950 British Grand Prix at Silverstone was the first race in the newly created World Championship of Drivers. The race rotated between Silverstone, Aintree and Brands Hatch from 1955 to 1986, but settled permanently at the Silverstone track in 1987. The circuit also hosts the British round of the MotoGP series.</p>
+            </article>
+          </div>
+          <div class="card my-2 p-3">
+            <article>
+              <img src="images/spaiki.png" class="w-50 rounded my-4" alt="">
+              <h2>Circuit de Spa-Francorchamps
+              </h2>
+              <p>In 1918, German headquarters were in Spa, and in 1919, the Treaty of Versailles separated the Eupen-Malmedy region from Prussia and the German Empire. Between January and June 1920, a plebiscite was held, without a secret ballot and under other questionable circumstances. As a result, the Transitional Government prepared for the unification of Eupen-Malmedy with Belgium in June 1925.
+
+                Jules de Thier, owner of the Liège newspaper La Meuse, was looking for a site to host a race, and following a meeting at the Hotel des Bruyères in Francorchamps, with burgomaster Joseph de Crawhez and racing-car driver Henri Langlois van Ophem, it was decided that the roads from Spa-Francorchamps to the former German Malmedy, to Stavelot, and back towards Francorchamps constituted an ideal triangle-shaped circuit with few tight corners and long fast sections.</p>
+              
+            </article>
+          </div>
+          <div class="card my-2 p-3">
+            <article>
+              <img src="images/turkey.png" class="w-50 rounded my-4" alt="">
+              <h2>Istanbul Park Circuit</h2>
+              <p>Intercity Istanbul Park (Turkish: İstanbul Park), also known as the Istanbul Racing Circuit or initially as the Istanbul Otodrom, is a motor sports race track in the Tuzla district of Istanbul, Turkey. Designed by Hermann Tilke, it opened on 19–21 August 2005. It has been called "the best race track in the world" by former Formula One Chief Executive Bernie Ecclestone, who held the managing rights of the circuit between 2007 and 2011.The circuit has been currently managed by the Turkish company Intercity since 2012.</p>
+            </article>
+          </div>
+          <div class="card my-2 p-3">
+            <article>
+              <img src="images/baku.png" class="w-50 rounded my-4" alt="">
+              <h2>Baku City Circuit</h2>
+              <p>The Baku City Circuit (Azerbaijani: Bakı Şəhər Halqası) is a motor racing street circuit located in Baku, Azerbaijan constructed near Baku Boulevard. A lap of the circuit is 6.003 km (3.730 mi), making it the fourth-longest circuit on the Formula One calendar (after Circuit de Spa-Francorchamps, Jeddah Street Circuit and Las Vegas Strip Circuit). The inaugural Formula One race at the circuit was the 2016 European Grand Prix and its support events. A year later, in 2017, the circuit held the inaugural Azerbaijan Grand Prix.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!--Main - End-->
+
+  <!--Footer - Start-->
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 F1 Official, Inc</p>
+    </footer>
+  </div>
+
+  <!--Footer - End-->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
